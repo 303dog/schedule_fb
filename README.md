@@ -1,3 +1,30 @@
+#Notes
+
+1. Plan your gem, imagine your interface
+2. Start w/ project structure - google
+3. Start w/ the entry point - file run
+4. Force that to build the CLI interface
+5. Stub out the interface
+6. Start making things real
+7. Discover projects
+8. program
+
+CLI to present NFL season schedule dependant on UI of team. 
+
+greets the user and produces a list of years
+
+Asks the user "What year would you like to see?"
+
+Should scrape http://www.nfl.com/schedules for desired team schedule.
+
+Accepts user input from a list of teams.
+
+Team choice displays that teams desired year schedule.
+
+
+
+
+
 # Schedule
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/schedule`. To experiment with that code, run `bin/console` for an interactive prompt.
