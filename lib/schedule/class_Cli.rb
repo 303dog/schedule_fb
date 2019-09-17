@@ -16,10 +16,8 @@ class Schedule::Class_Cli
         puts ""
         input = gets.strip.to_i
 
-        print_stats(input)
 
-
-        restaurant = Schedule::Scraper.find(input.to_i)
+        team = Schedule::Scraper.find(input.to_i)
 
       #  print_restaurant(restaurant)
 
