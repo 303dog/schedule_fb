@@ -1,9 +1,6 @@
-#!/usr/bin/env ruby 
+#!/usr/bin/env ruby
 
 require_relative '../lib/schedule'
 
-Schedule::Class_Cli.new.greeting
-
-
-
-
+Schedule::Class_Cli.new.call
+Schedule::Scraper.new
