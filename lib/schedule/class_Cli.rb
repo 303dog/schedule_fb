@@ -12,15 +12,14 @@ class Schedule::Class_Cli
         puts "Choose a year from the list below and type it in the terminal to find out!"
         puts ""
         list_years
-        #input = gets.strip.to_i
-
-        #print_restaurants(input)
-
+        puts "type the year below"
         puts ""
-        puts "What restaurant would you like more information on?"
-        #input = gets.strip
+        input = gets.strip.to_i
 
-        #restaurant = WorldsBestRestaurants::Restaurant.find(input.to_i)
+        print_stats(input)
+
+
+        restaurant = Schedule::Scraper.find(input.to_i)
 
       #  print_restaurant(restaurant)
 
@@ -32,11 +31,11 @@ class Schedule::Class_Cli
             start
           elsif input == "n"
             puts ""
-            puts "Thank you! Have a great day!"
+            puts "See you soon!"
             exit
           else
             puts ""
-            puts "Wait, what did you put?"
+            puts "Wait, what did you mean?"
             start
           end
       end
