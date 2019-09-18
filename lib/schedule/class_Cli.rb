@@ -19,12 +19,13 @@ class Schedule::Class_Cli
         input = gets.strip.downcase
           if input == "[2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]"
               puts #coorsponding years score and teams
-          elsif input =(i != [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
+          elsif input =( i != [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
               puts "Nope. That was not an option, pick again!"
               binding.pry
             input = gets.strip.downcase
             list_years
           end
+
         #team = Schedule::Scraper.find(input.to_i)
 
       #  print_restaurant(restaurant)
