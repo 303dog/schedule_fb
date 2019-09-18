@@ -14,15 +14,23 @@ class Schedule::Class_Cli
         list_years
         puts "type the year below"
         puts ""
-        input = gets.strip.to_i
+      #  input = gets.strip.to_i
 
-
-        team = Schedule::Scraper.find(input.to_i)
+        input = gets.strip.downcase
+          if input == "[2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]"
+              puts #coorsponding years score and teams
+          elsif input =(i != [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
+              puts "Nope. That was not an option, pick again!"
+              binding.pry
+            input = gets.strip.downcase
+            list_years
+          end
+        #team = Schedule::Scraper.find(input.to_i)
 
       #  print_restaurant(restaurant)
 
-        puts ""
-        puts "Do you want to see who the champions were for another year ? Enter Y or N"
+      #  puts ""
+      #  puts "Do you want to see who the champions were for another year ? Enter Y or N"
 
         input = gets.strip.downcase
           if input == "y"
@@ -33,15 +41,15 @@ class Schedule::Class_Cli
             exit
           else
             puts ""
-            puts "Wait, what did you mean?"
+            puts "Wait, what did you say?"
             start
           end
-      end
+
 
     def list_years
         puts [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009]
         puts [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
     end
 
-
+    end
 end
