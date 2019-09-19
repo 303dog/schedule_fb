@@ -9,6 +9,14 @@ class Schedule::Scraper
     binding.pry
   end
 
+  def scrape_games_index
+   self.get_page.css("div#t1-50 li")
+  end
 
+  def discover_year
+    scrape_games_index.each do |i|
+    Schedule::Champions.new_from_index_page(i)
+  end
+end
 
 end
