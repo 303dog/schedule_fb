@@ -3,4 +3,4 @@
 require_relative '../lib/schedule'
 
 Schedule::Class_Cli.new.call
-#Schedule::Scraper.new.call
+Schedule::Scraper.new.call

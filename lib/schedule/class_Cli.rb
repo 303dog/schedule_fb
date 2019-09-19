@@ -3,7 +3,7 @@
 class Schedule::Class_Cli
 
     def call
-        Schedule::Scraper.new.
+        Schedule::Scraper.new.discover_year
         puts "So you want to know which teams played in the Super Bowl last year? Or maybe you want to know the winning score?"
         start
     end
@@ -19,16 +19,16 @@ class Schedule::Class_Cli
         input = gets.strip.to_i
         #binding.pry
         #input = gets.strip.downcase
-        #  if input == "[2000]"
-              puts "coorosponding years score and teams"
+    end    #  if input == "[2000]"
 
-          else #input  # i != "[2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]"
-              puts "Nope. That was not an option, pick again!"
-            input = gets.strip.downcase
-            binding.pry
-            list_years
-          end
-
+#puts "coorosponding years score and teams"
+#binding.pry
+#else #input  # i != "[2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]"
+#puts "Nope. That was not an option, pick again!"
+#            input = gets.strip.downcase
+#            list_years
+#          end
+#
         championships = Schedule::Scraper.find(input.to_i)
 
       #  print_restaurant(restaurant)

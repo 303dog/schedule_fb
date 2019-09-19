@@ -1,6 +1,6 @@
 require 'pry'
-require_relative 'nokogiri'
-require_relative 'open-uri'
+#require_relative 'nokogiri'
+#require_relative 'open-uri'
 
 class Schedule::Scraper
 
